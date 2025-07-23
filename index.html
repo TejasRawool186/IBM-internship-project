@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KisaanTrade - Bridging Farmers and Retailers</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet"> -->
+   <!-- Tailwind CSS CDN (latest via jsdelivr) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-green-50 font-sans text-gray-800 scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-700">🌾 KisaanTrade</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#features" class="hover:text-green-600 font-medium">Features</a></li>
+          <li><a href="#how" class="hover:text-green-600 font-medium">How It Works</a></li>
+          <li><a href="#contact" class="hover:text-green-600 font-medium">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <!-- <section class="relative bg-green-100 py-20 px-4 text-center" style="background-image: url('img/hero.jpg');">
+    <h2 class="text-4xl md:text-5xl font-bold text-green-800 mb-4 animate-fadeInDown">Connecting Farmers & Retailers</h2>
+    <p class="text-xl text-gray-700 mb-8 animate-fadeInUp">A platform to simplify B2B agri-trade across India.</p>
+    <div class="flex justify-center gap-6">
+      a<button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-transform hover:scale-105">Join as Farmer</button>
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-xl font-semibold transition-transform hover:scale-105">Join as Retailer</button>
+    </div>
+  </section> -->
+
+  <section class="relative bg-cover bg-center h-[100vh]" style="background-image: url('img/hero.jpg');">
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center pt-32 px-4">
+    <h2 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-4 animate-fadeInDown">
+      Connecting Farmers & Retailers
+    </h2>
+    <p class="text-xl text-white drop-shadow-md mb-8 animate-fadeInUp">
+      A platform to simplify B2B agri-trade across India.
+    </p>
+    <div class="flex justify-center gap-6">
+      <a href="farmer.html">
+  <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-transform hover:scale-105">
+    Join as Farmer
+  </button>
+</a>
+  
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-xl font-semibold transition-transform hover:scale-105">Join as Retailer</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 px-4 bg-white">
+    <h3 class="text-3xl text-center font-bold text-green-800 mb-12">Why KisaanTrade?</h3>
+    <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="text-center p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-4xl mb-3">🚜</div>
+        <h4 class="text-xl font-semibold">Direct from Farms</h4>
+        <p class="text-gray-600 mt-2">Fresh and local produce without middlemen.</p>
+      </div>
+      <div class="text-center p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-4xl mb-3">🔗</div>
+        <h4 class="text-xl font-semibold">Instant Connections</h4>
+        <p class="text-gray-600 mt-2">Verified farmer-to-retailer network.</p>
+      </div>
+      <div class="text-center p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-4xl mb-3">💰</div>
+        <h4 class="text-xl font-semibold">Fair Pricing</h4>
+        <p class="text-gray-600 mt-2">Transparent, market-driven rates.</p>
+      </div>
+      <div class="text-center p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-4xl mb-3">📦</div>
+        <h4 class="text-xl font-semibold">Bulk Trading</h4>
+        <p class="text-gray-600 mt-2">Efficient for mandis and retailers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="how" class="py-16 px-4 bg-green-50">
+    <h3 class="text-3xl text-center font-bold text-green-800 mb-12">How It Works</h3>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto text-center">
+      <div class="p-4">
+        <div class="text-5xl mb-4">👨‍🌾</div>
+        <h4 class="text-xl font-semibold">Step 1: Farmer Lists Produce</h4>
+      </div>
+      <div class="p-4">
+        <div class="text-5xl mb-4">🧑‍💼</div>
+        <h4 class="text-xl font-semibold">Step 2: Retailer Browses Listings</h4>
+      </div>
+      <div class="p-4">
+        <div class="text-5xl mb-4">🚚</div>
+        <h4 class="text-xl font-semibold">Step 3: Delivery or Pickup Arranged</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-12 px-4">
+    <h3 class="text-3xl font-bold text-green-800 text-center mb-8">Contact Us</h3>
+    <p class="text-center text-gray-600">Email: contact@kisaantrade.in | Phone: +91 98765 43210</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6 mt-8 text-center">
+    <p>&copy; 2025 KisaanTrade. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
