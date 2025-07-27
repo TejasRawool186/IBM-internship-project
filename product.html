@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Products | KisaanTrade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.6s ease-out;
+    }
+    .card {
+      transition: all 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-700">🌾 KisaanTrade</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-green-600 font-medium">Home</a></li>
+          <li><a href="resources.html" class="hover:text-green-600 font-medium">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Heading -->
+  <section class="text-center py-10 px-4 animate-fadeInUp">
+    <h2 class="text-3xl font-bold text-green-700 mb-2">🛍️ Product Listings</h2>
+    <p class="text-gray-600">Filter and explore our full range of agricultural products.</p>
+  </section>
+
+  <!-- Content Layout -->
+  <div class="max-w-7xl mx-auto px-4 pb-16 grid grid-cols-1 md:grid-cols-4 gap-6">
+
+    <!-- Sidebar Filters -->
+    <aside class="bg-white p-4 rounded-xl shadow-md h-fit sticky top-24 md:col-span-1">
+      <h3 class="text-xl font-semibold mb-4 text-green-700">Filter by Category:</h3>
+      <div class="space-y-2">
+        <label class="block"><input type="checkbox" value="cereals" class="filter-checkbox mr-2">Cereals</label>
+        <label class="block"><input type="checkbox" value="grains" class="filter-checkbox mr-2">Grains</label>
+        <label class="block"><input type="checkbox" value="farming-equipment" class="filter-checkbox mr-2">Farming Equipment</label>
+        <label class="block"><input type="checkbox" value="fertilizers" class="filter-checkbox mr-2">Fertilizers</label>
+        <label class="block"><input type="checkbox" value="seeds" class="filter-checkbox mr-2">Seeds</label>
+        <label class="block"><input type="checkbox" value="pesticides" class="filter-checkbox mr-2">Pesticides</label>
+        <label class="block"><input type="checkbox" value="irrigation-tools" class="filter-checkbox mr-2">Irrigation Tools</label>
+        <label class="block"><input type="checkbox" value="soil-enhancers" class="filter-checkbox mr-2">Soil Enhancers</label>
+      </div>
+    </aside>
+
+    <!-- Product Grid -->
+    <main id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:col-span-3">
+      <!-- JS will populate this area with product cards -->
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6 text-center">
+    <p>&copy; 2025 KisaanTrade. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const productData = [
+      { category: 'cereals', name: 'Bajra', description: 'Nutritious millet cereal', image: 'img/bajra.png' },
+      { category: 'cereals', name: 'Ragi', description: 'Calcium-rich cereal grain', image: 'img/ragi.png' },
+      { category: 'grains', name: 'Wheat', description: 'Golden wheat from Punjab', image: 'img/wheat.png' },
+      { category: 'grains', name: 'Barley', description: 'Barley harvested in winter', image: 'img/barley.png' },
+      { category: 'farming-equipment', name: 'Tractor', description: 'Diesel tractor available for rent', image: 'img/tractor.png' },
+      { category: 'farming-equipment', name: 'Plough', description: 'Field ploughing tool', image: 'img/plough.png' },
+      { category: 'fertilizers', name: 'Organic Compost', description: 'Eco-friendly fertilizer', image: 'img/f.png' },
+      { category: 'fertilizers', name: 'Urea', description: 'Nitrogen-rich fertilizer', image: 'img/urea.png' },
+      { category: 'seeds', name: 'Tomato Seeds', description: 'High-yield hybrid seeds', image: 'img/tomatoseed.png' },
+      { category: 'seeds', name: 'Wheat Seeds', description: 'Germination guaranteed seeds', image: 'img/wheatseed.png' },
+      { category: 'pesticides', name: 'Neem Oil', description: 'Natural pest repellent', image: 'img/neemoil.png' },
+      { category: 'pesticides', name: 'Bio Insecticide', description: 'Safe organic pesticide', image: 'img/bioiin.png' },
+      { category: 'irrigation-tools', name: 'Drip Kit', description: 'Efficient drip irrigation', image: 'img/dripkit.png' },
+      { category: 'irrigation-tools', name: 'Sprinkler', description: 'Rotating field sprinkler', image: 'img/sprinkler.png' },
+      { category: 'soil-enhancers', name: 'Vermicompost', description: 'Enriches soil fertility', image: 'img/Vermicompost.png' },
+      { category: 'soil-enhancers', name: 'Gypsum', description: 'Soil conditioner', image: 'img/Gypsum.png' }
+    ];
+
+    const productGrid = document.getElementById('productGrid');
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+
+    function displayProducts(products) {
+      productGrid.innerHTML = '';
+      products.forEach(p => {
+        const card = document.createElement('div');
+        card.className = `card bg-white p-4 rounded-xl shadow animate-fadeInUp`;
+        card.setAttribute('data-category', p.category);
+        card.innerHTML = `
+          <img src="${p.image}" alt="${p.name}" class="w-full h-40 object-cover rounded" />
+          <h3 class="text-xl font-semibold mt-3">${p.name}</h3>
+          <p class="text-gray-600 text-sm">${p.description}</p>
+          <button class="mt-3 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Contact Seller</button>
+        `;
+        productGrid.appendChild(card);
+      });
+    }
+
+    function filterProducts() {
+      const selected = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
+      const filtered = selected.length ? productData.filter(p => selected.includes(p.category)) : productData;
+      displayProducts(filtered);
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+    displayProducts(productData);
+  </script>
+</body>
+</html>

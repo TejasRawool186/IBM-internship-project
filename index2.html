@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KisaanTrade - B2B for Agriculture</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-green-50 text-gray-800">
+
+  
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-green-150 shadow sticky top-0 z-50">
+    <div class="text-2xl font-bold text-green-700">🌾KisaanTrade</div>
+    <ul class="flex space-x-6 font-medium">
+      <li><a href="index2.html" class="hover:text-green-600">Home</a></li>
+      <li><a href="products.html" class="hover:text-green-600">Products</a></li>
+      <li><a href="#contact" class="hover:text-green-600">Contact</a></li>
+      <li><a href="login.html" class="hover:text-green-600">Login</a></li>
+    </ul>
+  </nav>
+
+<!-- Horizontal Category Bar with Dropdowns -->
+<div class="relative bg-white border-b shadow-sm z-50">
+  <div class="flex justify-center space-x-10 px-10 py-3">
+
+    <!-- Cereals -->
+    <div class="group relative cursor-pointer">
+      <div class="flex flex-col items-center">
+        <img src="https://img.icons8.com/color/48/wheat.png" class="h-8 mb-1" />
+        <span class="text-sm text-gray-800"><a href="cereals.html">Cereals</a></span>
+      </div>
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md hidden group-hover:flex flex-col w-40 py-2 z-50">
+        <a href="rice.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Rice</a>
+        <a href="wheat.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Wheat</a>
+        <a href="jowar.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Jowar</a>
+        <a href="bajra.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Bajra</a>
+      </div>
+    </div>
+
+    <!-- Grains -->
+    <div class="group relative cursor-pointer">
+      <div class="flex flex-col items-center">
+        <img src="https://img.icons8.com/color/48/corn.png" class="h-8 mb-1" />
+        <span class="text-sm text-gray-800">Grains</span>
+      </div>
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md hidden group-hover:flex flex-col w-40 py-2 z-50">
+        <a href="dal.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Dal</a>
+        <a href="chana.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Chana</a>
+        <a href="rajma.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Rajma</a>
+        <a href="moong.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Moong</a>
+      </div>
+    </div>
+
+    <!-- Equipment -->
+    <div class="group relative cursor-pointer">
+      <div class="flex flex-col items-center">
+        <img src="https://img.icons8.com/color/48/tractor.png" class="h-8 mb-1" />
+        <span class="text-sm text-gray-800">Equipment</span>
+      </div>
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md hidden group-hover:flex flex-col w-44 py-2 z-50">
+        <a href="tractors.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Tractors</a>
+        <a href="harvesters.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Harvesters</a>
+        <a href="ploughs.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Ploughs</a>
+        <a href="sprayers.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Sprayers</a>
+      </div>
+    </div>
+
+    <!-- Fertilizers -->
+    <div class="group relative cursor-pointer">
+      <div class="flex flex-col items-center">
+        <img src="img/fertilizer.png" class="h-8 mb-1" />
+        <span class="text-sm text-gray-800">Fertilizers</span>
+      </div>
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md hidden group-hover:flex flex-col w-44 py-2 z-50">
+        <a href="urea.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Urea</a>
+        <a href="dap.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">DAP</a>
+        <a href="npk.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">NPK</a>
+        <a href="organic.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Organic</a>
+      </div>
+    </div>
+
+    <!-- Seeds -->
+    <div class="group relative cursor-pointer">
+      <div class="flex flex-col items-center">
+        <img src="img/seeds.png" class="h-8 mb-1" />
+        <span class="text-sm text-gray-800">Seeds</span>
+      </div>
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md hidden group-hover:flex flex-col w-44 py-2 z-50">
+        <a href="vegetableseeds.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Vegetable Seeds</a>
+        <a href="fruits.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Fruit Seeds</a>
+        <a href="flowers.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Flower Seeds</a>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="group relative cursor-pointer">
+      <div class="flex flex-col items-center">
+        <img src="img/tools.png" class="h-8 mb-1" />
+        <span class="text-sm text-gray-800">Tools</span>
+      </div>
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md hidden group-hover:flex flex-col w-44 py-2 z-50">
+        <a href="spades.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Spades</a>
+        <a href="sickles.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Sickles</a>
+        <a href="hoes.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Hoes</a>
+      </div>
+    </div>
+
+    <!-- Irrigation -->
+    <div class="group relative cursor-pointer">
+      <div class="flex flex-col items-center">
+        <img src="https://img.icons8.com/color/48/watering-can.png" class="h-8 mb-1" />
+        <span class="text-sm text-gray-800">Irrigation</span>
+      </div>
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md hidden group-hover:flex flex-col w-44 py-2 z-50">
+        <a href="drip.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Drip Irrigation</a>
+        <a href="sprinkler.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Sprinklers</a>
+        <a href="pipes.html" class="px-4 py-2 hover:bg-green-100 text-sm text-gray-700">Pipes</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Include Tailwind's group-hover utilities -->
+
+<!-- Hero Section -->
+<section id="hero" class="relative flex flex-col md:flex-row items-center justify-between px-10 py-16 bg-cover bg-center overflow-hidden min-h-[90vh]"
+         style="background-image: url('img/hero.jpg');">
+
+  <!-- Dark overlay for better text visibility -->
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+
+  <!-- Left Content -->
+  <div class="relative z-10 max-w-xl text-white">
+    <h1 class="text-4xl font-extrabold leading-tight mb-4">
+      A One Stop B2B Portal for Agriculture
+    </h1>
+    <p class="text-lg mb-6">
+      Buy and sell cereals, grains, farm equipment, and agri-essentials directly from trusted sellers.
+    </p>
+    <div class="flex gap-2">
+      <input type="text" placeholder="Looking for something..." class="p-3 rounded-l-lg w-64 focus:outline-none text-black">
+      <button class="bg-green-600 text-white px-4 rounded-r-lg hover:bg-green-700">Search</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Popular Products -->
+  <section class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-10">Popular Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <img src="img/wheat.jpg.png" class="h-40 w-full object-cover rounded mb-3" />
+        <h3 class="text-green-800 font-semibold text-lg">Wheat</h3>
+        <p class="text-sm text-gray-600">Cereal Grain</p>
+        <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700">Explore</button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <img src="img/tractor.png" class="h-40 w-full object-cover rounded mb-3" />
+        <h3 class="text-green-800 font-semibold text-lg">Tractor</h3>
+        <p class="text-sm text-gray-600">Farming Equipment</p>
+        <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700">Explore</button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <img src="img/rice.png" class="h-40 w-full object-cover rounded mb-3" />
+        <h3 class="text-green-800 font-semibold text-lg">Rice</h3>
+        <p class="text-sm text-gray-600">Grain Crop</p>
+        <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700">Explore</button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <img src="img/ferti.png" class="h-40 w-full object-cover rounded mb-3" />
+        <h3 class="text-green-800 font-semibold text-lg">Fertilizer</h3>
+        <p class="text-sm text-gray-600">Agro Chemical</p>
+        <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700">Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Categories -->
+  <section class="bg-green-100 py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-10">All Categories</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white rounded shadow p-4">Cereals</div>
+      <div class="bg-white rounded shadow p-4">Grains</div>
+      <div class="bg-white rounded shadow p-4">Farming Equipment</div>
+      <div class="bg-white rounded shadow p-4">Fertilizers</div>
+      <div class="bg-white rounded shadow p-4">Seeds</div>
+      <div class="bg-white rounded shadow p-4">Pesticides</div>
+      <div class="bg-white rounded shadow p-4">Irrigation Tools</div>
+      <div class="bg-white rounded shadow p-4">Soil Enhancers</div>
+    </div>
+  </section>
+
+  <!-- Why KisaanTrade -->
+  <section class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-10">Why KisaanTrade?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div class="bg-white p-6 shadow rounded">
+        <h3 class="text-xl font-semibold text-green-700">✅ Verified Sellers</h3>
+        <p class="text-gray-600 mt-2">All sellers are verified and rated by buyers for trust and quality.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded">
+        <h3 class="text-xl font-semibold text-green-700">🌱 Direct from Farmers</h3>
+        <p class="text-gray-600 mt-2">Buy directly from the source and support Indian farmers.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded">
+        <h3 class="text-xl font-semibold text-green-700">💰 Affordable Rates</h3>
+        <p class="text-gray-600 mt-2">Bulk deals and wholesale pricing to benefit retailers and buyers.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded">
+        <h3 class="text-xl font-semibold text-green-700">📦 Easy Logistics</h3>
+        <p class="text-gray-600 mt-2">We help with fast and safe delivery for bulk orders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="bg-green-50 py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-10">About Us</h2>
+    <div class="max-w-4xl mx-auto space-y-6 text-left">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold text-green-700">About KisaanTrade</h3>
+        <p class="mt-2 text-gray-700">KisaanTrade is a modern B2B agricultural marketplace built to connect farmers and retailers for seamless trade in India’s agri-economy.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold text-green-700">Why this Project</h3>
+        <p class="mt-2 text-gray-700">We aim to empower rural markets, streamline supply chains, and offer digital platforms to farmers to reach wholesale buyers directly.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold text-green-700">Our Ideology</h3>
+        <p class="mt-2 text-gray-700">Tech meets tradition – our belief is that agriculture can flourish when empowered by technology, transparency, and trust.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+<section class="bg-white py-16 px-6 text-center">
+  <h2 class="text-3xl font-bold text-green-800 mb-10">What Our Users Say</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+    <div class="bg-green-50 p-6 rounded shadow">
+      <p>"This platform made it super easy for me to sell my crops."</p>
+      <p class="mt-2 font-semibold text-green-700">— Ramesh, Farmer</p>
+    </div>
+    <div class="bg-green-50 p-6 rounded shadow">
+      <p>"Reliable and trustworthy sellers. Love it!"</p>
+      <p class="mt-2 font-semibold text-green-700">— Anjali, Retailer</p>
+    </div>
+    <div class="bg-green-50 p-6 rounded shadow">
+      <p>"Best platform for bulk agricultural products."</p>
+      <p class="mt-2 font-semibold text-green-700">— Suresh, Wholesaler</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 px-6 bg-green-100 text-center">
+  <h2 class="text-3xl font-bold text-green-800 mb-8">Contact Us</h2>
+  <form class="max-w-xl mx-auto bg-white p-6 rounded shadow space-y-4">
+    <input type="text" placeholder="Your Name" class="w-full p-3 border rounded text-black" />
+    <input type="email" placeholder="Your Email" class="w-full p-3 border rounded text-black" />
+    <textarea placeholder="Your Message" rows="4" class="w-full p-3 border rounded text-black"></textarea>
+    <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Send Message</button>
+  </form>
+</section>
+
+
+<!-- CTA Section -->
+<section class="bg-green-600 text-white py-16 text-center">
+  <h2 class="text-3xl font-bold mb-4">Join KisaanTrade Today!</h2>
+  <p class="mb-6">Connect with thousands of farmers and retailers across India.</p>
+  <a href="#login" class="bg-white text-green-700 px-6 py-3 rounded font-semibold hover:bg-green-100 transition">
+    Get Started
+  </a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-b from-green-800 to-green-900 text-white py-10 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
+    
+    <div>
+      <h4 class="font-bold mb-2">Company</h4>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Press</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="font-bold mb-2">Products</h4>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#" class="hover:underline">Cereals</a></li>
+        <li><a href="#" class="hover:underline">Grains</a></li>
+        <li><a href="#" class="hover:underline">Equipment</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="font-bold mb-2">Support</h4>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#" class="hover:underline">Help Center</a></li>
+        <li><a href="#" class="hover:underline">FAQs</a></li>
+        <li><a href="#" class="hover:underline">Shipping Info</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="font-bold mb-2">Stay Connected</h4>
+      <form class="flex flex-col space-y-2">
+        <input type="text" placeholder="Your message" class="p-2 rounded text-black focus:outline-none focus:ring-2 focus:ring-green-500">
+        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">
+          Send
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-8 text-sm text-gray-300">
+    © 2025 KisaanTrade. All rights reserved.
+  </div>
+</footer>
+
+<button id="scrollTopBtn"
+        class="hidden fixed bottom-6 right-6 bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-700 transition z-50">
+  ↑ Top
+</button>
+<script src="js/main.js"></script>
+
+</body>
+</html>
