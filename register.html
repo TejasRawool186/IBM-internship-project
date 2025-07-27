@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | Frame Trade</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1 class="typing-text" id="typingText">Join Frame Trade</h1>
+      <p>
+        Frame Trade welcomes you to a secure and thriving platform where traders connect and grow. Register now to begin your journey with confidence and support.
+      </p>
+      <p>
+        Manage your frames, discover opportunities, and build meaningful trade relationships.
+      </p>
+    </div>
+
+    <div class="right-panel">
+      <div class="login-box hidden" id="registerBox">
+        <h2>Create an Account</h2>
+        <form action="/register" method="POST">
+          <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+
+          <button type="submit">Register</button>
+          <p class="register-link">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Frame Trade</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1 class="typing-text" id="typingText">Welcome to Frame Trade</h1>
+      <p>
+        Frame Trade is your trusted platform for buying, selling, and managing trading frames in a secure and user-friendly environment.
+        Whether you're a beginner or a seasoned trader, we help you find the perfect deals with complete transparency and control.
+      </p>
+      <p>
+        Join our community of verified traders, explore real-time opportunities, and grow your portfolio with confidence.
+      </p>
+    </div>
+
+    <div class="right-panel">
+      <div class="login-box hidden" id="loginBox">
+        <h2>Login to Your Account</h2>
+        <form action="/login" method="POST">
+          <div class="input-group">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+
+          <button type="submit">Login</button>
+          <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
