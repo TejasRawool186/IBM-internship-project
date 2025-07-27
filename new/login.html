@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - KisaanTrade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Minimal Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-white shadow sticky top-0 z-50">
+    <div class="text-2xl font-bold text-green-700">🌾 KisaanTrade</div>
+    <ul class="flex space-x-6 font-medium text-green-800">
+      <li><a href="index2.html" class="hover:text-green-600">Home</a></li>
+      <li><a href="about.html" class="hover:text-green-600">About</a></li>
+      <li><a href="contact.html" class="hover:text-green-600">Contact</a></li>
+      <li><a href="register.html" class="hover:text-green-600">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="flex min-h-[90vh]">
+    
+    <!-- Left Section -->
+    <div class="w-1/2 relative bg-cover bg-center flex items-center justify-center"
+         style="background-image: url('your-image-path.jpg');">
+      <div class="absolute inset-0 bg-green-900 opacity-60"></div>
+      <div class="relative text-white px-10 py-16 max-w-xl space-y-6">
+        <h1 class="text-4xl font-bold">Welcome to KisaanTrade</h1>
+        <p class="text-lg">
+          KisaanTrade is a modern B2B agricultural marketplace built to connect farmers and retailers for seamless trade in India’s agri-economy.
+        </p>
+        <p class="text-lg">
+          We aim to empower rural markets, streamline supply chains, and offer digital platforms to farmers to reach wholesale buyers directly.
+        </p>
+        <p class="text-lg">
+          Tech meets tradition – our belief is that agriculture can flourish when empowered by technology, transparency, and trust.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Section: Login Form -->
+    <div class="w-1/2 flex items-center justify-center p-8">
+      <div class="bg-white p-10 rounded-xl shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold text-green-700 mb-6 text-center">Login to Your Account</h2>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label class="block text-sm text-green-700 mb-1">Username or Email</label>
+            <input type="text" class="w-full p-3 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400" required>
+          </div>
+          <div>
+            <label class="block text-sm text-green-700 mb-1">Password</label>
+            <input type="password" class="w-full p-3 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400" required>
+            <div class="text-right mt-2">
+              <a href="forgot-password.html" class="text-sm text-green-600 hover:underline">Forgot Password?</a>
+            </div>
+          </div>
+          <button type="submit" class="w-full bg-green-700 text-white p-3 rounded-md hover:bg-green-800">Login</button>
+        </form>
+        <p class="mt-4 text-sm text-center text-gray-600">
+          Don’t have an account?
+          <a href="register.html" class="text-green-600 hover:underline">Register</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

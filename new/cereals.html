@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cereals - KisaanTrade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 text-green-900">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-white shadow sticky top-0 z-50">
+    <div class="text-2xl font-bold text-green-700">🌾 KisaanTrade</div>
+    <ul class="hidden md:flex space-x-6 font-medium text-green-800">
+      <li><a href="index.html" class="hover:text-green-600">Home</a></li>
+      <li><a href="products.html" class="hover:text-green-600">Products</a></li>
+      <li><a href="contact.html" class="hover:text-green-600">Contact</a></li>
+      <li><a href="login.html" class="hover:text-green-600">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Heading -->
+  <header class="text-center py-10 bg-gradient-to-r from-green-200 to-green-100 shadow-md">
+    <h1 class="text-4xl font-extrabold text-green-800">Cereals</h1>
+    <p class="text-green-700 mt-2">Browse the best quality cereals from trusted sellers</p>
+  </header>
+
+  <!-- Product Grid -->
+  <section class="px-6 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- Product Card -->
+      <div class="bg-white rounded-xl shadow hover:shadow-md transition-all p-4">
+        <img src="img/rice.jpg" alt="Rice" class="w-full h-40 object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold text-green-800">Basmati Rice</h3>
+        <p class="text-sm text-gray-600 mb-2">₹85/kg · Punjab Agro</p>
+        <button class="bg-green-600 text-white text-sm py-2 px-4 rounded hover:bg-green-700 w-full">View Details</button>
+      </div>
+
+      <!-- Another Product -->
+      <div class="bg-white rounded-xl shadow hover:shadow-md transition-all p-4">
+        <img src="img/wheat.jpg" alt="Wheat" class="w-full h-40 object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold text-green-800">Sharbati Wheat</h3>
+        <p class="text-sm text-gray-600 mb-2">₹40/kg · MP Traders</p>
+        <button class="bg-green-600 text-white text-sm py-2 px-4 rounded hover:bg-green-700 w-full">View Details</button>
+      </div>
+
+      <!-- Repeat for more products -->
+      <div class="bg-white rounded-xl shadow hover:shadow-md transition-all p-4">
+        <img src="img/bajra.jpg" alt="Bajra" class="w-full h-40 object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold text-green-800">Bajra Millet</h3>
+        <p class="text-sm text-gray-600 mb-2">₹32/kg · Gujarat Agro</p>
+        <button class="bg-green-600 text-white text-sm py-2 px-4 rounded hover:bg-green-700 w-full">View Details</button>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-md transition-all p-4">
+        <img src="img/jowar.jpg" alt="Jowar" class="w-full h-40 object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold text-green-800">Organic Jowar</h3>
+        <p class="text-sm text-gray-600 mb-2">₹28/kg · Maharashtra Farms</p>
+        <button class="bg-green-600 text-white text-sm py-2 px-4 rounded hover:bg-green-700 w-full">View Details</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-green-700 py-6">
+    &copy; 2025 KisaanTrade. All rights reserved.
+  </footer>
+
+</body>
+</html>
